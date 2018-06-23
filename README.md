@@ -2,6 +2,8 @@
 
 Make your mac better.
 
+[English](./) · [简体中文](./README-zh.md)
+
 ## Table of Contents
 
 - [Remove the Auto-Hide Dock Delay]()
