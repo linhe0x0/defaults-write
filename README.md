@@ -10,6 +10,7 @@ Make your mac better.
 - [Speed Up Mission Control Animations](#speed-up-mission-control-animations)
 - [Return to Default Mission Control Animation Speeds](#return-to-default-mission-control-animation-speeds)
 - [Make Hidden App Icons Translucent in the Dock](#make-hidden-app-icons-translucent-in-the-dock)
+- [Stop Full Names from Copying with Email Addresses in OS X Mail](#stop-full-names-from-copying-with-email-addresses-in-os-x-mail)
 
 ### Remove the Auto-Hide Dock Delay
 
@@ -40,6 +41,14 @@ defaults delete com.apple.dock expose-animation-duration && killall Dock
 
 ```bash
 defaults write com.apple.Dock showhidden -bool YES && killall Dock
+```
+
+[⬆️ Back to top](#defaults-write)
+
+### Stop Full Names from Copying with Email Addresses in OS X Mail
+
+```bash
+defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 ```
 
 [⬆️ Back to top](#defaults-write)
