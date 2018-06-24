@@ -9,6 +9,7 @@ Make your mac better.
 - [Remove the Auto-Hide Dock Delay](#remove-the-auto-hide-dock-delay)
 - [Speed Up Mission Control Animations](#speed-up-mission-control-animations)
 - [Return to Default Mission Control Animation Speeds](#return-to-default-mission-control-animation-speeds)
+- [Make Hidden App Icons Translucent in the Dock](#make-hidden-app-icons-translucent-in-the-dock)
 
 ### Remove the Auto-Hide Dock Delay
 
@@ -31,6 +32,14 @@ defaults write com.apple.dock expose-animation-duration -float 0.15 && killall D
 
 ```bash
 defaults delete com.apple.dock expose-animation-duration && killall Dock
+```
+
+[⬆️ Back to top](#defaults-write)
+
+### Make Hidden App Icons Translucent in the Dock
+
+```bash
+defaults write com.apple.Dock showhidden -bool YES && killall Dock
 ```
 
 [⬆️ Back to top](#defaults-write)
