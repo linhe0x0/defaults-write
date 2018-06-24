@@ -6,15 +6,17 @@
 
 ## 导航
 
-- [取消自动隐藏 Dock 的触发时间]()
-- [加快 Mission Control 的动画效果]()
-- [重置为默认的 Mission Control 的动画速度]()
+- [取消自动隐藏 Dock 的触发时间](#取消自动隐藏-dock-的触发时间)
+- [加快 Mission Control 的动画效果](#加快-mission-control-的动画效果)
+- [重置为默认的 Mission Control 的动画速度](#重置为默认的-mission-control-的动画速度)
 
 ### 取消自动隐藏 Dock 的触发时间
 
 ```bash
 defaults write com.apple.Dock autohide-delay -float 0 && killall Dock
 ```
+
+[⬆️ 返回顶部](#defaults-write)
 
 ### 加快 Mission Control 的动画效果
 
@@ -23,8 +25,12 @@ defaults write com.apple.Dock autohide-delay -float 0 && killall Dock
 defaults write com.apple.dock expose-animation-duration -float 0.15 && killall Dock
 ```
 
+[⬆️ 返回顶部](#defaults-write)
+
 ### 重置为默认的 Mission Control 的动画速度
 
 ```bash
 defaults delete com.apple.dock expose-animation-duration && killall Dock
 ```
+
+[⬆️ 返回顶部](#defaults-write)
