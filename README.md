@@ -7,6 +7,7 @@ Make your mac better.
 ## Table of Contents
 
 - [Add Blank Spaces to Dock to Better Organize Apps](#add-blank-spaces-to-dock-to-better-organize-apps)
+- [Add Narrow Spaces to Dock to Better Organize Apps](#add-narrow-spaces-to-dock-to-better-organize-apps)
 - [Remove the Auto-Hide Dock Delay](#remove-the-auto-hide-dock-delay)
 - [Speed Up Mission Control Animations](#speed-up-mission-control-animations)
 - [Return to Default Mission Control Animation Speeds](#return-to-default-mission-control-animation-speeds)
@@ -18,6 +19,14 @@ Make your mac better.
 
 ```bash
 defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}' && killall Dock
+```
+
+[⬆️ Back to top](#defaults-write)
+
+### Add Narrow Spaces to Dock to Better Organize Apps
+
+```bash
+defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="small-spacer-tile";}' && killall Dock
 ```
 
 [⬆️ Back to top](#defaults-write)

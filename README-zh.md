@@ -7,6 +7,7 @@
 ## 导航
 
 - [在 Dock 中添加空白符以更好的组织应用](#在-dock-中添加空白符以更好的组织应用)
+- [在 Dock 中添加“紧凑的”空白符以更好的组织应用](#在-dock-中添加紧凑的空白符以更好的组织应用)
 - [取消自动隐藏 Dock 的触发时间](#取消自动隐藏-dock-的触发时间)
 - [加快 Mission Control 的动画效果](#加快-mission-control-的动画效果)
 - [重置为默认的 Mission Control 的动画速度](#重置为默认的-mission-control-的动画速度)
@@ -18,6 +19,14 @@
 
 ```bash
 defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}' && killall Dock
+```
+
+[⬆️ 返回顶部](#defaults-write)
+
+### 在 Dock 中添加“紧凑的”空白符以更好的组织应用
+
+```bash
+defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="small-spacer-tile";}' && killall Dock
 ```
 
 [⬆️ 返回顶部](#defaults-write)
