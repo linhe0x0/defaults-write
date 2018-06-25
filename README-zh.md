@@ -17,7 +17,7 @@
 ### 在 Dock 中添加空白符以更好的组织应用
 
 ```bash
-defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
+defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}' && killall Dock
 ```
 
 [⬆️ 返回顶部](#defaults-write)

@@ -17,7 +17,7 @@ Make your mac better.
 ### Add Blank Spaces to Dock to Better Organize Apps
 
 ```bash
-defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
+defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}' && killall Dock
 ```
 
 [⬆️ Back to top](#defaults-write)
