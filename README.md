@@ -6,12 +6,21 @@ Make your mac better.
 
 ## Table of Contents
 
+- [Add Blank Spaces to Dock to Better Organize Apps](#add-blank-spaces-to-dock-to-better-organize-apps)
 - [Remove the Auto-Hide Dock Delay](#remove-the-auto-hide-dock-delay)
 - [Speed Up Mission Control Animations](#speed-up-mission-control-animations)
 - [Return to Default Mission Control Animation Speeds](#return-to-default-mission-control-animation-speeds)
 - [Make Hidden App Icons Translucent in the Dock](#make-hidden-app-icons-translucent-in-the-dock)
 - [Stop Full Names from Copying with Email Addresses in OS X Mail](#stop-full-names-from-copying-with-email-addresses-in-os-x-mail)
 - [Enable Text Selection in Quick Look Windows](#enable-text-selection-in-quick-look-windows)
+
+### Add Blank Spaces to Dock to Better Organize Apps
+
+```bash
+defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
+```
+
+[⬆️ Back to top](#defaults-write)
 
 ### Remove the Auto-Hide Dock Delay
 

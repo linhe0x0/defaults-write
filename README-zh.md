@@ -6,12 +6,21 @@
 
 ## 导航
 
+- [在 Dock 中添加空白符以更好的组织应用](#在-dock-中添加空白符以更好的组织应用)
 - [取消自动隐藏 Dock 的触发时间](#取消自动隐藏-dock-的触发时间)
 - [加快 Mission Control 的动画效果](#加快-mission-control-的动画效果)
 - [重置为默认的 Mission Control 的动画速度](#重置为默认的-mission-control-的动画速度)
 - [让 Dock 中隐藏的程序图标半透明](#让-dock-中隐藏的程序图标半透明)
 - [拷贝 Mail.app 中的邮件地址时不使用全名](#拷贝-mailapp-中的邮件地址时不使用全名)
 - [在“快速查看”中开启文本选择功能](#在快速查看中开启文本选择功能)
+
+### 在 Dock 中添加空白符以更好的组织应用
+
+```bash
+defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
+```
+
+[⬆️ 返回顶部](#defaults-write)
 
 ### 取消自动隐藏 Dock 的触发时间
 
