@@ -6,10 +6,10 @@ Make your mac better.
 
 ## Table of Contents
 
-- [Add Blank Spaces to Left Side of the Dock to Better Organize App(where the Applications Are)](#add-blank-spaces-to-left-side-of-the-dock-to-better-organize-apps)
-- [Add Narrow Spaces to Left Side of the Dock to Better Organize Apps(where the Applications Are)](#add-narrow-spaces-to-left-side-of-the--dock-to-better-organize-apps)
-- [Add Blank Spaces to Right Side of the Dock to Better Organize App(where the Trash is)]()
-- [Add Narrow Spaces to Right Side of the Dock to Better Organize Apps(where the Trash is)]()
+- [Add Blank Spaces to Left Side of the Dock to Better Organize App(where the Applications Are)](#add-blank-spaces-to-left-side-of-the-dock-to-better-organize-appwhere-the-applications-are)
+- [Add Narrow Spaces to Left Side of the Dock to Better Organize Apps(where the Applications Are)](#add-narrow-spaces-to-left-side-of-the-dock-to-better-organize-appswhere-the-applications-are)
+- [Add Blank Spaces to Right Side of the Dock to Better Organize App(where the Trash is)](#add-blank-spaces-to-right-side-of-the-dock-to-better-organize-appwhere-the-trash-is)
+- [Add Narrow Spaces to Right Side of the Dock to Better Organize Apps(where the Trash is)](#add-narrow-spaces-to-right-side-of-the-dock-to-better-organize-appswhere-the-trash-is)
 - [Remove the Auto-Hide Dock Delay](#remove-the-auto-hide-dock-delay)
 - [Speed Up Mission Control Animations](#speed-up-mission-control-animations)
 - [Return to Default Mission Control Animation Speeds](#return-to-default-mission-control-animation-speeds)
