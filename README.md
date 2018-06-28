@@ -6,8 +6,10 @@ Make your mac better.
 
 ## Table of Contents
 
-- [Add Blank Spaces to Dock to Better Organize Apps](#add-blank-spaces-to-dock-to-better-organize-apps)
-- [Add Narrow Spaces to Dock to Better Organize Apps](#add-narrow-spaces-to-dock-to-better-organize-apps)
+- [Add Blank Spaces to Left Side of the Dock to Better Organize App(where the Applications Are)](#add-blank-spaces-to-left-side-of-the-dock-to-better-organize-apps)
+- [Add Narrow Spaces to Left Side of the Dock to Better Organize Apps(where the Applications Are)](#add-narrow-spaces-to-left-side-of-the--dock-to-better-organize-apps)
+- [Add Blank Spaces to Right Side of the Dock to Better Organize App(where the Trash is)]()
+- [Add Narrow Spaces to Right Side of the Dock to Better Organize Apps(where the Trash is)]()
 - [Remove the Auto-Hide Dock Delay](#remove-the-auto-hide-dock-delay)
 - [Speed Up Mission Control Animations](#speed-up-mission-control-animations)
 - [Return to Default Mission Control Animation Speeds](#return-to-default-mission-control-animation-speeds)
@@ -16,7 +18,7 @@ Make your mac better.
 - [Enable Text Selection in Quick Look Windows](#enable-text-selection-in-quick-look-windows)
 - [Disable the “Are you sure you want to open this application?” dialog](#disable-the-are-you-sure-you-want-to-open-this-application-dialog)
 
-### Add Blank Spaces to Dock to Better Organize Apps
+### Add Blank Spaces to Left Side of the Dock to Better Organize App(where the Applications Are)
 
 ```bash
 defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}' && killall Dock
@@ -24,10 +26,26 @@ defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-ty
 
 [⬆️ Back to top](#defaults-write)
 
-### Add Narrow Spaces to Dock to Better Organize Apps
+### Add Narrow Spaces to Left Side of the Dock to Better Organize Apps(where the Applications Are)
 
 ```bash
 defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="small-spacer-tile";}' && killall Dock
+```
+
+[⬆️ Back to top](#defaults-write)
+
+### Add Blank Spaces to Right Side of the Dock to Better Organize App(where the Trash is)
+
+```bash
+defaults write com.apple.dock persistent-others -array-add '{tile-data={}; tile-type="spacer-tile";}' && killall Dock
+```
+
+[⬆️ Back to top](#defaults-write)
+
+### Add Narrow Spaces to Right Side of the Dock to Better Organize Apps(where the Trash is)
+
+```bash
+defaults write com.apple.dock persistent-others -array-add '{tile-data={}; tile-type="small-spacer-tile";}' && killall Dock
 ```
 
 [⬆️ Back to top](#defaults-write)
