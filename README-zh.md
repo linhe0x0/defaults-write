@@ -14,6 +14,7 @@
 - [让 Dock 中隐藏的程序图标半透明](#让-dock-中隐藏的程序图标半透明)
 - [拷贝 Mail.app 中的邮件地址时不使用全名](#拷贝-mailapp-中的邮件地址时不使用全名)
 - [在“快速查看”中开启文本选择功能](#在快速查看中开启文本选择功能)
+- [禁用“你确定要打开这个应用吗？”对话框](#禁用-你确定要打开这个应用吗-对话框)
 
 ### 在 Dock 中添加空白符以更好的组织应用
 
@@ -76,6 +77,14 @@ defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 
 ```bash
 defaults write com.apple.finder QLEnableTextSelection -bool true && killall Finder
+```
+
+[⬆️ 返回顶部](#defaults-write)
+
+### 禁用“你确定要打开这个应用吗？”对话框
+
+```bash
+defaults write com.apple.LaunchServices LSQuarantine -bool false
 ```
 
 [⬆️ 返回顶部](#defaults-write)

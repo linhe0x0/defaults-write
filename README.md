@@ -14,6 +14,7 @@ Make your mac better.
 - [Make Hidden App Icons Translucent in the Dock](#make-hidden-app-icons-translucent-in-the-dock)
 - [Stop Full Names from Copying with Email Addresses in OS X Mail](#stop-full-names-from-copying-with-email-addresses-in-os-x-mail)
 - [Enable Text Selection in Quick Look Windows](#enable-text-selection-in-quick-look-windows)
+- [Disable the “Are you sure you want to open this application?” dialog](#disable-the-are-you-sure-you-want-to-open-this-application-dialog)
 
 ### Add Blank Spaces to Dock to Better Organize Apps
 
@@ -76,6 +77,14 @@ defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 
 ```bash
 defaults write com.apple.finder QLEnableTextSelection -bool true && killall Finder
+```
+
+[⬆️ Back to top](#defaults-write)
+
+### Disable the “Are you sure you want to open this application?” dialog
+
+```bash
+defaults write com.apple.LaunchServices LSQuarantine -bool false
 ```
 
 [⬆️ Back to top](#defaults-write)
