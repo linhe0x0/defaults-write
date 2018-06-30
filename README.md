@@ -17,6 +17,7 @@ Make your mac better.
 - [Stop Full Names from Copying with Email Addresses in OS X Mail](#stop-full-names-from-copying-with-email-addresses-in-os-x-mail)
 - [Enable Text Selection in Quick Look Windows](#enable-text-selection-in-quick-look-windows)
 - [Disable the “Are you sure you want to open this application?” dialog](#disable-the-are-you-sure-you-want-to-open-this-application-dialog)
+- [Show indicator lights for open applications in the Dock](#show-indicator-lights-for-open-applications-in-the-dock)
 
 ### Add Blank Spaces to Left Side of the Dock to Better Organize App(where the Applications Are)
 
@@ -103,6 +104,14 @@ defaults write com.apple.finder QLEnableTextSelection -bool true && killall Find
 
 ```bash
 defaults write com.apple.LaunchServices LSQuarantine -bool false
+```
+
+[⬆️ Back to top](#defaults-write)
+
+### Show indicator lights for open applications in the Dock
+
+```bash
+defaults write com.apple.dock show-process-indicators -bool true && killall Finder
 ```
 
 [⬆️ Back to top](#defaults-write)

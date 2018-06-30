@@ -17,6 +17,7 @@
 - [拷贝 Mail.app 中的邮件地址时不使用全名](#拷贝-mailapp-中的邮件地址时不使用全名)
 - [在“快速查看”中开启文本选择功能](#在快速查看中开启文本选择功能)
 - [禁用“你确定要打开这个应用吗？”对话框](#禁用你确定要打开这个应用吗对话框)
+- [为 Dock 栏中的正在运行的应用添加指示灯](#为-dock-栏中的正在运行的应用添加指示灯)
 
 ### 在 Dock 左侧添加空白符以更好的组织应用（应用区）
 
@@ -103,6 +104,14 @@ defaults write com.apple.finder QLEnableTextSelection -bool true && killall Find
 
 ```bash
 defaults write com.apple.LaunchServices LSQuarantine -bool false
+```
+
+[⬆️ 返回顶部](#defaults-write)
+
+### 为 Dock 栏中的正在运行的应用添加指示灯
+
+```bash
+defaults write com.apple.dock show-process-indicators -bool true && killall Finder
 ```
 
 [⬆️ 返回顶部](#defaults-write)
