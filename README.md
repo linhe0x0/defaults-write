@@ -18,6 +18,7 @@ Make your mac better.
 - [Enable Text Selection in Quick Look Windows](#enable-text-selection-in-quick-look-windows)
 - [Disable the “Are you sure you want to open this application?” dialog](#disable-the-are-you-sure-you-want-to-open-this-application-dialog)
 - [Show indicator lights for open applications in the Dock](#show-indicator-lights-for-open-applications-in-the-dock)
+- [Enable the status bar in Finder](#enable-the-status-bar-in-finder)
 
 ### Add Blank Spaces to Left Side of the Dock to Better Organize App(where the Applications Are)
 
@@ -112,6 +113,14 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 
 ```bash
 defaults write com.apple.dock show-process-indicators -bool true && killall Finder
+```
+
+[⬆️ Back to top](#defaults-write)
+
+### Enable the status bar in Finder
+
+```bash
+defaults write com.apple.finder ShowStatusBar -bool true && killall Finder
 ```
 
 [⬆️ Back to top](#defaults-write)
