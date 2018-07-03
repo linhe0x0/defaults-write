@@ -19,6 +19,7 @@
 - [禁用“你确定要打开这个应用吗？”对话框](#禁用你确定要打开这个应用吗对话框)
 - [为 Dock 栏中的正在运行的应用添加指示灯](#为-dock-栏中的正在运行的应用添加指示灯)
 - [在 Finder 中显示状态栏](#在-finder-中显示状态栏)
+- [默认开启使用安全模式清空垃圾篓](#默认开启使用安全模式清空垃圾篓)
 
 ### 在 Dock 左侧添加空白符以更好的组织应用（应用区）
 
@@ -121,6 +122,14 @@ defaults write com.apple.dock show-process-indicators -bool true && killall Find
 
 ```bash
 defaults write com.apple.finder ShowStatusBar -bool true && killall Finder
+```
+
+[⬆️ 返回顶部](#defaults-write)
+
+### 默认开启使用安全模式清空垃圾篓
+
+```bash
+defaults write com.apple.finder EmptyTrashSecurely -bool true && killall Finder
 ```
 
 [⬆️ 返回顶部](#defaults-write)

@@ -19,6 +19,7 @@ Make your mac better.
 - [Disable the “Are you sure you want to open this application?” dialog](#disable-the-are-you-sure-you-want-to-open-this-application-dialog)
 - [Show indicator lights for open applications in the Dock](#show-indicator-lights-for-open-applications-in-the-dock)
 - [Enable the status bar in Finder](#enable-the-status-bar-in-finder)
+- [Empty Trash securely by default](#empty-trash-securely-by-default)
 
 ### Add Blank Spaces to Left Side of the Dock to Better Organize App(where the Applications Are)
 
@@ -121,6 +122,14 @@ defaults write com.apple.dock show-process-indicators -bool true && killall Find
 
 ```bash
 defaults write com.apple.finder ShowStatusBar -bool true && killall Finder
+```
+
+[⬆️ Back to top](#defaults-write)
+
+### Empty Trash securely by default
+
+```bash
+defaults write com.apple.finder EmptyTrashSecurely -bool true && killall Finder
 ```
 
 [⬆️ Back to top](#defaults-write)
