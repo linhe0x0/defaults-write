@@ -81,7 +81,7 @@ defaults delete com.apple.dock expose-animation-duration && killall Dock
 ### Make Hidden App Icons Translucent in the Dock
 
 ```bash
-defaults write com.apple.Dock showhidden -bool YES && killall Dock
+defaults write com.apple.dock showhidden -bool YES && killall Dock
 ```
 
 [⬆️ Back to top](#defaults-write)
@@ -113,7 +113,7 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 ### Show indicator lights for open applications in the Dock
 
 ```bash
-defaults write com.apple.dock show-process-indicators -bool true && killall Finder
+defaults write com.apple.dock show-process-indicators -bool true && killall Dock
 ```
 
 [⬆️ Back to top](#defaults-write)

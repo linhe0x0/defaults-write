@@ -81,7 +81,7 @@ defaults delete com.apple.dock expose-animation-duration && killall Dock
 ### 让 Dock 中隐藏的程序图标半透明
 
 ```bash
-defaults write com.apple.Dock showhidden -bool YES && killall Dock
+defaults write com.apple.dock showhidden -bool YES && killall Dock
 ```
 
 [⬆️ 返回顶部](#defaults-write)
@@ -113,7 +113,7 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 ### 为 Dock 栏中的正在运行的应用添加指示灯
 
 ```bash
-defaults write com.apple.dock show-process-indicators -bool true && killall Finder
+defaults write com.apple.dock show-process-indicators -bool true && killall Dock
 ```
 
 [⬆️ 返回顶部](#defaults-write)
