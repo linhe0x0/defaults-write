@@ -20,6 +20,7 @@
 - [为 Dock 栏中的正在运行的应用添加指示灯](#为-dock-栏中的正在运行的应用添加指示灯)
 - [在 Finder 中显示状态栏](#在-finder-中显示状态栏)
 - [默认开启使用安全模式清空垃圾篓](#默认开启使用安全模式清空垃圾篓)
+- [保存文件时默认显示文件夹目录列表](#保存文件时默认显示文件夹目录列表)
 
 ### 在 Dock 左侧添加空白符以更好的组织应用（应用区）
 
@@ -130,6 +131,14 @@ defaults write com.apple.finder ShowStatusBar -bool true && killall Finder
 
 ```bash
 defaults write com.apple.finder EmptyTrashSecurely -bool true && killall Finder
+```
+
+[⬆️ 返回顶部](#defaults-write)
+
+### 保存文件时默认显示文件夹目录列表
+
+```bash
+defaults write -g NSNavPanelExpandedStateForSaveMode -bool true && killall Finder
 ```
 
 [⬆️ 返回顶部](#defaults-write)

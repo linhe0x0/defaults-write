@@ -20,6 +20,7 @@ Make your mac better.
 - [Show indicator lights for open applications in the Dock](#show-indicator-lights-for-open-applications-in-the-dock)
 - [Enable the status bar in Finder](#enable-the-status-bar-in-finder)
 - [Empty Trash securely by default](#empty-trash-securely-by-default)
+- [Always show expanded save dialogs](#always-show-expanded-save-dialogs)
 
 ### Add Blank Spaces to Left Side of the Dock to Better Organize App(where the Applications Are)
 
@@ -130,6 +131,14 @@ defaults write com.apple.finder ShowStatusBar -bool true && killall Finder
 
 ```bash
 defaults write com.apple.finder EmptyTrashSecurely -bool true && killall Finder
+```
+
+[⬆️ Back to top](#defaults-write)
+
+### Always show expanded save dialogs
+
+```bash
+defaults write -g NSNavPanelExpandedStateForSaveMode -bool true && killall Finder
 ```
 
 [⬆️ Back to top](#defaults-write)
