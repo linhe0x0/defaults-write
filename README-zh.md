@@ -148,6 +148,6 @@ defaults write -g NSNavPanelExpandedStateForSaveMode -bool true && killall Finde
 
 ```bash
 defaults write com.apple.screencapture location -string "$HOME/Desktop"
-``
+```
 
 [⬆️ 返回顶部](#defaults-write)
