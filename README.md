@@ -21,6 +21,7 @@ Make your mac better.
 - [Enable the status bar in Finder](#enable-the-status-bar-in-finder)
 - [Empty Trash securely by default](#empty-trash-securely-by-default)
 - [Always show expanded save dialogs](#always-show-expanded-save-dialogs)
+- [Define where to save screenshots](#define-where-to-save-screenshots)
 
 ### Add Blank Spaces to Left Side of the Dock to Better Organize App(where the Applications Are)
 
@@ -139,6 +140,15 @@ defaults write com.apple.finder EmptyTrashSecurely -bool true && killall Finder
 
 ```bash
 defaults write -g NSNavPanelExpandedStateForSaveMode -bool true && killall Finder
+```
+
+[⬆️ Back to top](#defaults-write)
+
+
+### Define where to save screenshots
+
+```bash
+defaults write com.apple.screencapture location -string "$HOME/Desktop"
 ```
 
 [⬆️ Back to top](#defaults-write)

@@ -21,6 +21,7 @@
 - [在 Finder 中显示状态栏](#在-finder-中显示状态栏)
 - [默认开启使用安全模式清空垃圾篓](#默认开启使用安全模式清空垃圾篓)
 - [保存文件时默认显示文件夹目录列表](#保存文件时默认显示文件夹目录列表)
+- [自定义截图保存的位置](#自定义截图保存的位置)
 
 ### 在 Dock 左侧添加空白符以更好的组织应用（应用区）
 
@@ -140,5 +141,13 @@ defaults write com.apple.finder EmptyTrashSecurely -bool true && killall Finder
 ```bash
 defaults write -g NSNavPanelExpandedStateForSaveMode -bool true && killall Finder
 ```
+
+[⬆️ 返回顶部](#defaults-write)
+
+### 自定义截图保存的位置
+
+```bash
+defaults write com.apple.screencapture location -string "$HOME/Desktop"
+``
 
 [⬆️ 返回顶部](#defaults-write)
