@@ -2,7 +2,7 @@
 
 这些隐藏的命令会让你的 Mac 更好用。
 
-[English](./) · [简体中文](./README-zh.md)
+[English](./README.md) · [简体中文](./README-zh.md)
 
 ## 导航
 
