@@ -24,6 +24,7 @@ Make your mac better.
 - [Empty Trash securely by default](#empty-trash-securely-by-default)
 - [Always show expanded save dialogs](#always-show-expanded-save-dialogs)
 - [Define where to save screenshots](#define-where-to-save-screenshots)
+- [Reduce Transparency in Menu and Windows](#reduce-transparency-in-menu-and-windows)
 
 ### Add Blank Spaces to Left Side of the Dock to Better Organize App(where the Applications Are)
 
@@ -146,11 +147,18 @@ defaults write -g NSNavPanelExpandedStateForSaveMode -bool true && killall Finde
 
 [⬆️ Back to top](#defaults-write)
 
-
 ### Define where to save screenshots
 
 ```bash
 defaults write com.apple.screencapture location -string "$HOME/Desktop"
+```
+
+[⬆️ Back to top](#defaults-write)
+
+### Reduce Transparency in Menu and Windows
+
+```
+defaults write com.apple.universalaccess reduceTransparency -bool true
 ```
 
 [⬆️ Back to top](#defaults-write)
