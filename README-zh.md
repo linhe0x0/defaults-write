@@ -1,8 +1,10 @@
+[English](./README.md) · [简体中文](./README-zh.md)
+
 # defaults-write
 
 这些隐藏的命令会让你的 Mac 更好用。
 
-[English](./README.md) · [简体中文](./README-zh.md)
+> 你不需要知道每一件事，只需要知道在哪里可以找到它。 —— 爱因斯坦
 
 ## 导航
 

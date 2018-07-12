@@ -1,8 +1,10 @@
+[English](./README.md) · [简体中文](./README-zh.md)
+
 # defaults-write
 
 Make your mac better.
 
-[English](./README.md) · [简体中文](./README-zh.md)
+> You Don’t Have to Know Everything. You Just Have to Know Where to Find It. —— Albert Einstein
 
 ## Table of Contents
 
