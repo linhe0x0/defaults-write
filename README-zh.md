@@ -25,6 +25,7 @@
 - [保存文件时默认显示文件夹目录列表](#保存文件时默认显示文件夹目录列表)
 - [自定义截图保存的位置](#自定义截图保存的位置)
 - [关闭窗口和菜单的透明度](#关闭窗口和菜单的透明度)
+- [显示调试按钮](#显示调试按钮)
 
 ### 在 Dock 左侧添加空白符以更好的组织应用（应用区）
 
@@ -159,6 +160,14 @@ defaults write com.apple.screencapture location -string "$HOME/Desktop"
 
 ```
 defaults write com.apple.universalaccess reduceTransparency -bool true
+```
+
+[⬆️ 返回顶部](#defaults-write)
+
+### 显示调试按钮
+
+```
+defaults write com.apple.appstore ShowDebugMenu -bool true
 ```
 
 [⬆️ 返回顶部](#defaults-write)

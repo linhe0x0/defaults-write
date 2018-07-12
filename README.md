@@ -25,6 +25,7 @@ Make your mac better.
 - [Always show expanded save dialogs](#always-show-expanded-save-dialogs)
 - [Define where to save screenshots](#define-where-to-save-screenshots)
 - [Reduce Transparency in Menu and Windows](#reduce-transparency-in-menu-and-windows)
+- [Show Debug Menu](#show-debug-menu)
 
 ### Add Blank Spaces to Left Side of the Dock to Better Organize App(where the Applications Are)
 
@@ -159,6 +160,14 @@ defaults write com.apple.screencapture location -string "$HOME/Desktop"
 
 ```
 defaults write com.apple.universalaccess reduceTransparency -bool true
+```
+
+[⬆️ Back to top](#defaults-write)
+
+### Show Debug Menu
+
+```
+defaults write com.apple.appstore ShowDebugMenu -bool true
 ```
 
 [⬆️ Back to top](#defaults-write)
