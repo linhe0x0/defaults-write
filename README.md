@@ -26,6 +26,7 @@ Make your mac better.
 - [Define where to save screenshots](#define-where-to-save-screenshots)
 - [Reduce Transparency in Menu and Windows](#reduce-transparency-in-menu-and-windows)
 - [Show Debug Menu](#show-debug-menu)
+- [Always Show Hidden Files in the Finder](#always-show-hidden-files-in-the-finder)
 
 ### Add Blank Spaces to Left Side of the Dock to Better Organize App(where the Applications Are)
 
@@ -168,6 +169,14 @@ defaults write com.apple.universalaccess reduceTransparency -bool true
 
 ```
 defaults write com.apple.appstore ShowDebugMenu -bool true
+```
+
+[⬆️ Back to top](#defaults-write)
+
+### Always Show Hidden Files in the Finder
+
+```
+defaults write com.apple.finder AppleShowAllFiles -bool YES && killall Finder
 ```
 
 [⬆️ Back to top](#defaults-write)
