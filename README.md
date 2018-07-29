@@ -29,6 +29,7 @@ Make your mac better.
 - [Always Show Hidden Files in the Finder](#always-show-hidden-files-in-the-finder)
 - [Change the Rows of Launchpad](#change-the-rows-of-launchpad)
 - [Change the Columns of Launchpad](#change-the-columns-of-launchpad)
+- [Reset Layout of Launchpad](#reset-layout-of-launchpad)
 
 ### Add Blank Spaces to Left Side of the Dock to Better Organize App(where the Applications Are)
 
@@ -195,6 +196,14 @@ defaults write com.apple.dock springboard-rows -int 6 && killall Dock
 
 ```
 defaults write com.apple.dock springboard-columns -int 8 && killall Dock
+```
+
+[⬆️ Back to top](#defaults-write)
+
+### Reset Layout of Launchpad
+
+```
+defaults write com.apple.dock ResetLaunchPad -bool true && killall Dock
 ```
 
 [⬆️ Back to top](#defaults-write)
