@@ -27,9 +27,9 @@
 - [关闭窗口和菜单的透明度](#关闭窗口和菜单的透明度)
 - [显示调试按钮](#显示调试按钮)
 - [在 Finder 中始终显示隐藏的文件和文件夹](#在-finder-中始终显示隐藏的文件和文件夹)
-- [调整启动器中的行数](#调整启动器中的行数)
-- [调整启动器中的列数](#调整启动器中的列数)
-- [重置启动器的布局为默认状态](#重置启动器的布局为默认状态)
+- [调整启动台中的行数](#调整启动台中的行数)
+- [调整启动台中的列数](#调整启动台中的列数)
+- [重置启动台的布局为默认状态](#重置启动台的布局为默认状态)
 
 ### 在 Dock 左侧添加空白符以更好的组织应用（应用区）
 
@@ -184,7 +184,7 @@ defaults write com.apple.finder AppleShowAllFiles -bool YES && killall Finder
 
 [⬆️ 返回顶部](#defaults-write)
 
-### 调整启动器中的行数
+### 调整启动台中的行数
 
 ```
 defaults write com.apple.dock springboard-rows -int 6 && killall Dock
@@ -192,7 +192,7 @@ defaults write com.apple.dock springboard-rows -int 6 && killall Dock
 
 [⬆️ 返回顶部](#defaults-write)
 
-### 调整启动器中的列数
+### 调整启动台中的列数
 
 ```
 defaults write com.apple.dock springboard-columns -int 8 && killall Dock
@@ -200,7 +200,7 @@ defaults write com.apple.dock springboard-columns -int 8 && killall Dock
 
 [⬆️ 返回顶部](#defaults-write)
 
-### 重置启动器的布局为默认状态
+### 重置启动台的布局为默认状态
 
 ```
 defaults write com.apple.dock ResetLaunchPad -bool true && killall Dock
