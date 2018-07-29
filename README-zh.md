@@ -27,6 +27,7 @@
 - [关闭窗口和菜单的透明度](#关闭窗口和菜单的透明度)
 - [显示调试按钮](#显示调试按钮)
 - [在 Finder 中始终显示隐藏的文件和文件夹](#在-finder-中始终显示隐藏的文件和文件夹)
+- [调整启动器中每行显示的应用数](#调整启动器中每行显示的应用数)
 
 ### 在 Dock 左侧添加空白符以更好的组织应用（应用区）
 
@@ -177,6 +178,14 @@ defaults write com.apple.appstore ShowDebugMenu -bool true
 
 ```
 defaults write com.apple.finder AppleShowAllFiles -bool YES && killall Finder
+```
+
+[⬆️ 返回顶部](#defaults-write)
+
+### 调整启动器中每行显示的应用数
+
+```
+defaults write com.apple.dock springboard-columns -int 6 && killall Dock
 ```
 
 [⬆️ 返回顶部](#defaults-write)
