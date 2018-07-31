@@ -26,6 +26,7 @@ Make your mac better.
 - [Define where to save screenshots](#define-where-to-save-screenshots)
 - [Reduce Transparency in Menu and Windows](#reduce-transparency-in-menu-and-windows)
 - [Show Debug Menu](#show-debug-menu)
+- [Hide Desktop Icon](#hide-desktop-icon)
 
 ### Add Blank Spaces to Left Side of the Dock to Better Organize App(where the Applications Are)
 
@@ -158,7 +159,7 @@ defaults write com.apple.screencapture location -string "$HOME/Desktop"
 
 ### Reduce Transparency in Menu and Windows
 
-```
+```bash
 defaults write com.apple.universalaccess reduceTransparency -bool true
 ```
 
@@ -166,8 +167,16 @@ defaults write com.apple.universalaccess reduceTransparency -bool true
 
 ### Show Debug Menu
 
-```
+```bash
 defaults write com.apple.appstore ShowDebugMenu -bool true
+```
+
+[⬆️ Back to top](#defaults-write)
+
+### Hide Desktop Icon
+
+```bash
+defaults write com.apple.finder CreateDesktop -bool false && killall Finder
 ```
 
 [⬆️ Back to top](#defaults-write)

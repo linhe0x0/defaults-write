@@ -26,6 +26,7 @@
 - [自定义截图保存的位置](#自定义截图保存的位置)
 - [关闭窗口和菜单的透明度](#关闭窗口和菜单的透明度)
 - [显示调试按钮](#显示调试按钮)
+- [隐藏“桌面”图标](#隐藏桌面图标)
 
 ### 在 Dock 左侧添加空白符以更好的组织应用（应用区）
 
@@ -168,6 +169,14 @@ defaults write com.apple.universalaccess reduceTransparency -bool true
 
 ```
 defaults write com.apple.appstore ShowDebugMenu -bool true
+```
+
+[⬆️ 返回顶部](#defaults-write)
+
+### 隐藏“桌面”图标
+
+```bash
+defaults write com.apple.finder CreateDesktop -bool false && killall Finder
 ```
 
 [⬆️ 返回顶部](#defaults-write)
