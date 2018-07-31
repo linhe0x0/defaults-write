@@ -27,6 +27,10 @@ Make your mac better.
 - [Reduce Transparency in Menu and Windows](#reduce-transparency-in-menu-and-windows)
 - [Show Debug Menu](#show-debug-menu)
 - [Hide Desktop Icon](#hide-desktop-icon)
+- [Always Show Hidden Files in the Finder](#always-show-hidden-files-in-the-finder)
+- [Change the Rows of Launchpad](#change-the-rows-of-launchpad)
+- [Change the Columns of Launchpad](#change-the-columns-of-launchpad)
+- [Reset Layout of Launchpad](#reset-layout-of-launchpad)
 
 ### Add Blank Spaces to Left Side of the Dock to Better Organize App(where the Applications Are)
 
@@ -177,6 +181,38 @@ defaults write com.apple.appstore ShowDebugMenu -bool true
 
 ```bash
 defaults write com.apple.finder CreateDesktop -bool false && killall Finder
+```
+
+[⬆️ Back to top](#defaults-write)
+
+### Always Show Hidden Files in the Finder
+
+```
+defaults write com.apple.finder AppleShowAllFiles -bool YES && killall Finder
+```
+
+[⬆️ Back to top](#defaults-write)
+
+### Change the Rows of Launchpad
+
+```
+defaults write com.apple.dock springboard-rows -int 6 && killall Dock
+```
+
+[⬆️ Back to top](#defaults-write)
+
+### Change the Columns of Launchpad
+
+```
+defaults write com.apple.dock springboard-columns -int 8 && killall Dock
+```
+
+[⬆️ Back to top](#defaults-write)
+
+### Reset Layout of Launchpad
+
+```
+defaults write com.apple.dock ResetLaunchPad -bool true && killall Dock
 ```
 
 [⬆️ Back to top](#defaults-write)
