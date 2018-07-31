@@ -187,7 +187,7 @@ defaults write com.apple.finder CreateDesktop -bool false && killall Finder
 ### 在 Finder 中始终显示隐藏的文件和文件夹
 
 ```
-defaults write com.apple.finder AppleShowAllFiles -bool YES && killall Finder
+defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder
 ```
 
 [⬆️ 返回顶部](#defaults-write)

@@ -188,7 +188,7 @@ defaults write com.apple.finder CreateDesktop -bool false && killall Finder
 ### Always Show Hidden Files in the Finder
 
 ```
-defaults write com.apple.finder AppleShowAllFiles -bool YES && killall Finder
+defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder
 ```
 
 [⬆️ Back to top](#defaults-write)
