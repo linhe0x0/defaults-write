@@ -31,6 +31,7 @@ Make your mac better.
 - [Change the Rows of Launchpad](#change-the-rows-of-launchpad)
 - [Change the Columns of Launchpad](#change-the-columns-of-launchpad)
 - [Reset Layout of Launchpad](#reset-layout-of-launchpad)
+- [Show Path Bar in Finder](#how-path-bar-in-finder)
 
 ### Add Blank Spaces to Left Side of the Dock to Better Organize App(where the Applications Are)
 
@@ -213,6 +214,14 @@ defaults write com.apple.dock springboard-columns -int 8 && killall Dock
 
 ```
 defaults write com.apple.dock ResetLaunchPad -bool true && killall Dock
+```
+
+[⬆️ Back to top](#defaults-write)
+
+### Show Path Bar in Finder
+
+```bash
+defaults write com.apple.finder ShowPathbar -bool true && killall Finder
 ```
 
 [⬆️ Back to top](#defaults-write)

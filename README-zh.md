@@ -31,6 +31,7 @@
 - [调整启动台中的行数](#调整启动台中的行数)
 - [调整启动台中的列数](#调整启动台中的列数)
 - [重置启动台的布局为默认状态](#重置启动台的布局为默认状态)
+- [在 Finder 中显示路径导航条](#在-finder-中显示路径导航条)
 
 ### 在 Dock 左侧添加空白符以更好的组织应用（应用区）
 
@@ -212,6 +213,14 @@ defaults write com.apple.dock springboard-columns -int 8 && killall Dock
 
 ```
 defaults write com.apple.dock ResetLaunchPad -bool true && killall Dock
+```
+
+[⬆️ 返回顶部](#defaults-write)
+
+### 在 Finder 中显示路径导航条
+
+```bash
+defaults write com.apple.finder ShowPathbar -bool true && killall Finder
 ```
 
 [⬆️ 返回顶部](#defaults-write)
