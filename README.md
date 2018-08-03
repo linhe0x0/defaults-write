@@ -32,6 +32,7 @@ Make your mac better.
 - [Change the Columns of Launchpad](#change-the-columns-of-launchpad)
 - [Reset Layout of Launchpad](#reset-layout-of-launchpad)
 - [Show Path Bar in Finder](#how-path-bar-in-finder)
+- [Set Current Folder as Default Search Scope](#set-current-folder-as-default-search-scope)
 
 ### Add Blank Spaces to Left Side of the Dock to Better Organize App(where the Applications Are)
 
@@ -222,6 +223,14 @@ defaults write com.apple.dock ResetLaunchPad -bool true && killall Dock
 
 ```bash
 defaults write com.apple.finder ShowPathbar -bool true && killall Finder
+```
+
+[⬆️ Back to top](#defaults-write)
+
+### Set Current Folder as Default Search Scope
+
+```bash
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf" && killall Finder
 ```
 
 [⬆️ Back to top](#defaults-write)
