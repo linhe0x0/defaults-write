@@ -33,6 +33,7 @@ Make your mac better.
 - [Reset Layout of Launchpad](#reset-layout-of-launchpad)
 - [Show Path Bar in Finder](#how-path-bar-in-finder)
 - [Set Current Folder as Default Search Scope](#set-current-folder-as-default-search-scope)
+- [Reverse Dark Mode to Menubar and Dock Only](#reverse-dark-mode-to-menubar-and-dock-only)
 
 ### Add Blank Spaces to Left Side of the Dock to Better Organize App(where the Applications Are)
 
@@ -231,6 +232,14 @@ defaults write com.apple.finder ShowPathbar -bool true && killall Finder
 
 ```bash
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf" && killall Finder
+```
+
+[⬆️ Back to top](#defaults-write)
+
+### Reverse Dark Mode to Menubar and Dock Only
+
+```bash
+defaults write -g NSRequiresAquaSystemAppearance -bool Yes
 ```
 
 [⬆️ Back to top](#defaults-write)

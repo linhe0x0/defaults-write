@@ -33,6 +33,7 @@
 - [重置启动台的布局为默认状态](#重置启动台的布局为默认状态)
 - [在 Finder 中显示路径导航条](#在-finder-中显示路径导航条)
 - [设置“当前文件夹”为默认的搜索区域](#设置当前文件夹为默认的搜索区域)
+- [只让菜单栏和 Dock 栏变为深色模式](#只让菜单栏和-dock-栏变为深色模式)
 
 ### 在 Dock 左侧添加空白符以更好的组织应用（应用区）
 
@@ -230,6 +231,14 @@ defaults write com.apple.finder ShowPathbar -bool true && killall Finder
 
 ```bash
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf" && killall Finder
+```
+
+[⬆️ 返回顶部](#defaults-write)
+
+### 只让菜单栏和 Dock 栏变为深色模式
+
+```bash
+defaults write -g NSRequiresAquaSystemAppearance -bool Yes
 ```
 
 [⬆️ 返回顶部](#defaults-write)
